@@ -39,3 +39,18 @@ console.log(formHandler.value);
 the formHandler.onChange to arrow the callback is the this in object formHandler*/
 
 //-------Theard challenge---------------------------------------
+const translator = {
+    language: "Arabic",
+    getLanguage() {
+        return `Current language: ${this.language}`;
+    },
+};
+
+// ❓ Write a function logLanguageInfo(getter) that logs the language info correctly even if getLanguage is passed as an argument.
+// const logLanguageInfo = translator.getLanguage.bind(translator);
+// console.log(logLanguageInfo());
+//------- OR -------
+// function logLanguageInfo(getting){
+//     console.log(getting());
+// }
+// logLanguageInfo(translator.getLanguage.bind(translator));
